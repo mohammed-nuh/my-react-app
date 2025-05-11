@@ -1,0 +1,17 @@
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.productCard {
+    background-color: #1b263b; /* Slightly lighter dark blue */
+    /* border: none; */
+  }
+
+.productCard-text {
+    color: #dce3f3; /* Light blue text */
+}
+
+.productCard-title{
+  color: wheat;
+}

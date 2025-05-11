@@ -1,0 +1,36 @@
+.courseCard img {
+    width: 400px;
+}
+
+.courseCard {
+    border: 5px solid black;
+}
+
+.courseSection {
+    background-color: aliceblue;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* optional, for vertical centering */
+}
+
+.courseSection h2 {
+    text-align: center;
+    color: black;
+}
+
+.text-green {
+    color: rgb(109, 182, 0);
+    font-style: italic;
+}
+
+.text-yellow {
+    color: rgb(177, 175, 0);
+    font-style: italic;
+}
+
+.courseCard-body {
+    background-color: rgb(255, 250, 238);
+}
