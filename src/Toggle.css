@@ -1,0 +1,16 @@
+.toggleSection {
+    background-color: white;
+}
+
+.toggleSection h2 {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+.toggleSectionContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
