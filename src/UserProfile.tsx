@@ -8,7 +8,7 @@ interface UserProfileProps {
 
 function UserProfile(props: UserProfileProps) {
     return (
-        <section className="userProfileSection my-5 px-3">
+        <section className="userProfileSection m-5">
             <h2>{props.name}'s Profile</h2>
             <h4>Age: {props.age}</h4>
             <h4>Qualification:</h4>

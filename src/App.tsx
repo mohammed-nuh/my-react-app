@@ -1,7 +1,7 @@
 import './App.css'
-import CourseListSimple from './CourseListSimple';
-import OnChangeDemo from './OnChangeDemo';
-import Toggle from './Toggle';
+import BookInfo from './componenets/BookInfo';
+import MovieInfo from './componenets/MovieInfo';
+import ProductList from './componenets/ProductList';
 import UserProfile from './UserProfile';
 
 
@@ -9,10 +9,10 @@ function App() {
   return (
     <div>
       <h1 className='mainHeading'>My React App</h1>
-      <Toggle />
-      <OnChangeDemo />
-      <CourseListSimple title='IT Courses for Beginners' courses={["Excel", "HTML", "CSS", "Web Design"]}/>
+      <ProductList />
       <UserProfile name="Nuh" age={19} qualifications={["BCA with Data Analytics", "MCA with AI and ML", "Specialist in React"]}/>
+      <BookInfo name="Atomic Habits" author="James Clear" year={2006} price={1500} />
+      <MovieInfo name="3-Idiots" director="Rajkumar Hirani" year={2009} isRecommended={true} />
     </div>
   );
 }
