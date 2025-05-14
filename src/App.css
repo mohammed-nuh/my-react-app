@@ -7,3 +7,31 @@
 section h2{
     color: rgb(182, 219, 252);
 }
+
+nav {
+    background-color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.myNavButton {
+    text-decoration: none;
+    color: #0d1b2a;
+}
+
+.myNavButton:hover {
+    text-decoration: none;
+    background-color: #003771;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.simpleComponent {
+    background-color: #1b263b;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+}

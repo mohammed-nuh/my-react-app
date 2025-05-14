@@ -1,43 +1,11 @@
-import mobileImg from '../assets/mobile.png';
-import laptopImg from '../assets/laptop.png';
-import earBudsImg from '../assets/earbuds.png';
-import headphoneImg from '../assets/headphone.png';
 import "./ProductList.css"
-import { ProductStructure } from './ProductStructure';
-import Product from './Product';
+import { Product } from '../types/Product';
+import ProductCard from './ProductCard';
+import { getProducts } from '../services/productService';
 
-function Products() {
-    let products: ProductStructure[] = [
-    {
-        id: 1,
-        title: "Mobile",
-        description: "mobile phone",
-        price: 8000,
-        imgLink: mobileImg
-    },
-    {
-        id: 2,
-        title: "Laptop",
-        description: "personal laptop",
-        price: 45000,
-        imgLink: laptopImg
-    },
-    {
-        id: 3,
-        title: "Earbuds",
-        description: "wireless earbuds",
-        price: 2000,
-        imgLink: earBudsImg
-    },
-    {
-        id: 4,
-        title: "Headphone",
-        description: "over-ear headphone",
-        price: 3000,
-        imgLink: headphoneImg
-    }
-];
+function ProductList() {
 
+    let products: Product[] = getProducts();
 
     return (
         <section className='my-4 py-2'>
@@ -46,7 +14,7 @@ function Products() {
                 <div className="row g-4">
                     {
                         products.map((product) => (
-                            <Product id={product.id} title={product.title} description={product.description} price={product.price} imgLink={product.imgLink} />
+                            <ProductCard id={product.id} title={product.title} description={product.description} price={product.price} imgLink={product.imgLink} />
                         ))}
                 </div>
 
@@ -55,4 +23,4 @@ function Products() {
     );
 }
 
-export default Products;
+export default ProductList;

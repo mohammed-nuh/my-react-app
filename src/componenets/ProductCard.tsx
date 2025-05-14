@@ -6,7 +6,7 @@ interface productProps {
     imgLink: string;
 }
 
-let Product = (props: productProps) => {
+let ProductCard = (props: productProps) => {
     return (
         <>
             <div className="col-12 col-sm-6 col-lg-3">
@@ -24,4 +24,4 @@ let Product = (props: productProps) => {
     )
 }
 
-export default Product;
+export default ProductCard;

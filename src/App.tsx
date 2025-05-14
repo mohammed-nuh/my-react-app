@@ -1,24 +1,31 @@
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css'
-import BookInfo from './componenets/BookInfo';
-import MovieInfo from './componenets/MovieInfo';
-import MovieList from './componenets/MovieList';
+import Home from './componenets/Home';
+import About from './componenets/About';
+import Contact from './componenets/Contact';
 import ProductList from './componenets/ProductList';
-import UserProfile from './UserProfile';
+import MovieList from './componenets/MovieList';
 
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <h1 className='mainHeading'>My React App</h1>
-      <hr />
-      <ProductList />
-      <hr />
-      <MovieList />
-
-      {/* <UserProfile name="Nuh" age={19} qualifications={["BCA with Data Analytics", "MCA with AI and ML", "Specialist in React"]}/>
-      <BookInfo name="Atomic Habits" author="James Clear" year={2006} price={1500} />
-      <MovieInfo name="3-Idiots" director="Rajkumar Hirani" year={2009} isRecommended={true} /> */}
-    </div>
+      <nav>
+        <Link to='/' className='py-3 px-5 myNavButton'>Home</Link>
+        <Link to='/products' className='py-3 px-5 myNavButton'>Products</Link>
+        <Link to='/movies' className='py-3 px-5 myNavButton'>Movies</Link>
+        <Link to='/contact' className='py-3 px-5 myNavButton'>Contact</Link>
+        <Link to='/about' className='py-3 px-5 myNavButton'>About</Link>
+      </nav>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/products' element={<ProductList />}></Route>
+        <Route path='/movies' element={<MovieList />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/about' element={<About />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
