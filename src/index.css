@@ -3,3 +3,11 @@ body {
     background-color: #0d1b2a; /* Dark Blue */
     color: #ffffff;
 }
+
+.text-yellow {
+ color: yellow;
+}
+
+.text-red {
+ color: red;
+}

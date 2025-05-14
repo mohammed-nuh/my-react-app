@@ -40,7 +40,7 @@ function Products() {
 
 
     return (
-        <section className='my-3 py-2'>
+        <section className='my-4 py-2'>
             <h2>Product Cards</h2>
             <div className="container">
                 <div className="row g-4">
