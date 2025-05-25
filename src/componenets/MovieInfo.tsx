@@ -7,7 +7,7 @@ interface MovieInfoProps {
 
 function MovieInfo(props: MovieInfoProps){
     return (
-        <section className="m-5">
+        <section className="m-5 ">
         <h2>Movie Info</h2>
         <div className="card p-3">
             <h3>{props.name}</h3>

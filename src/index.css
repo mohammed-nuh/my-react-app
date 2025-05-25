@@ -1,7 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0d1b2a; /* Dark Blue */
-    color: #ffffff;
+    /* background-color: #0d1b2a; Dark Blue */
+    background-color: #212529;
+    /* color: #ffffff; */
+}
+
+header h2 {
+    background-color:aquamarine;
+    color: #0d1b2a;
 }
 
 .text-yellow {
@@ -10,5 +16,26 @@ body {
 
 .text-red {
  color: red;
+}
+
+footer {
+    background-color: black;
+}
+
+.paginationBg {
+    background-color: #212529;    
+}
+
+
+.imgCenter {
+ text-align: center;
+}
+
+.centerButton {
+    text-align: center;
+}
+
+.detailCardBg {
+    background-color: #1b263b;
 }
 

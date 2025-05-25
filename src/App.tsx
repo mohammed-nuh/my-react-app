@@ -1,31 +1,37 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import Home from './componenets/Home';
 import About from './componenets/About';
 import Contact from './componenets/Contact';
 import ProductList from './componenets/ProductList';
 import MovieList from './componenets/MovieList';
+import Header from './componenets/Header';
+import Footer from './componenets/Footer';
+import QuoteList from './componenets/QuoteList';
+import Counter from './componenets/Counter';
+import RecipeDetails from './componenets/RecipeDetails';
+import RecipeListPagination2 from './componenets/RecipeListPagination2';
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <h1 className='mainHeading'>My React App</h1>
-      <nav>
-        <Link to='/' className='py-3 px-5 myNavButton'>Home</Link>
-        <Link to='/products' className='py-3 px-5 myNavButton'>Products</Link>
-        <Link to='/movies' className='py-3 px-5 myNavButton'>Movies</Link>
-        <Link to='/contact' className='py-3 px-5 myNavButton'>Contact</Link>
-        <Link to='/about' className='py-3 px-5 myNavButton'>About</Link>
-      </nav>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/products' element={<ProductList />}></Route>
-        <Route path='/movies' element={<MovieList />}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/about' element={<About />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <div className='d-flex flex-column min-vh-100'>
+      <Header />
+      <main className='flex-grow-1'>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/counter' element={<Counter title="My Counter App" initialValue={0} />}></Route>
+          <Route path='/products' element={<ProductList />}></Route>
+          <Route path='/movies' element={<MovieList />}></Route>
+          <Route path='/quotes' element={<QuoteList />}></Route>
+          <Route path='/recipes' element={<RecipeListPagination2 />}></Route>
+          <Route path='/recipes/:id' element={<RecipeDetails />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/about' element={<About />}></Route>
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

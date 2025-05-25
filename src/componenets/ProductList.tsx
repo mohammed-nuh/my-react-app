@@ -8,7 +8,7 @@ function ProductList() {
     let products: Product[] = getProducts();
 
     return (
-        <section className='my-4 py-2'>
+        <section className='mt-3 mb-5 py-2'>
             <h2>Product Cards</h2>
             <div className="container">
                 <div className="row g-4">
