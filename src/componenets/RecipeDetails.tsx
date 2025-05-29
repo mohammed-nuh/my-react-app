@@ -27,7 +27,7 @@ function RecipeDetails() {
             if (!response.ok) {
                 throw new Error("Could not load the recipe");
             }
-            let recipeData = await response.json();
+            let recipeData: Recipe = await response.json();
             setRecipe(recipeData);
             setLoading(false);
         } catch (error: any) {

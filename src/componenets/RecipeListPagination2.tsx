@@ -94,15 +94,16 @@ let RecipeListPagination2 = () => {
             </div>
 
             <nav className="pagination paginationBg mt-5">
+                <li className="page-item"><button className={currentPage == 1 ? "page-link disabled" : "page-link"} onClick={() => currentPage > 1 ? setCurrentPage(currentPage - 1): null}>Previous</button></li>
                 {pageNos.map(pageNo => (
                     <li className={currentPage == pageNo ? 'page-item active' : 'page-item'}>
                         <button className='page-link' onClick={() => {
-                            setCurrentPage(pageNo)
-                        }}>{pageNo}
-
-                        </button>
+                            setCurrentPage(pageNo);
+                            window.scrollTo({ top: 0 });
+                        }}>{pageNo} </button>
                     </li>
                 ))}
+                <li className="page-item"><button className={currentPage == totalPages ? "page-link disabled" : "page-link"} onClick={() => currentPage < totalPages ? setCurrentPage(currentPage + 1): null}>Next</button></li>
             </nav>
         </section>
     );

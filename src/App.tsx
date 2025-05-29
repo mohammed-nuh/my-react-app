@@ -10,7 +10,10 @@ import Footer from './componenets/Footer';
 import QuoteList from './componenets/QuoteList';
 import Counter from './componenets/Counter';
 import RecipeDetails from './componenets/RecipeDetails';
-import RecipeListPagination2 from './componenets/RecipeListPagination2';
+import RecipeListWithSearch from './componenets/RecipeListWithSearch';
+import RecipesDashboard from './componenets/RecipesDashboard';
+import EditRecipe from './componenets/EditRecipe';
+import AddRecipe from './componenets/AddRecipe';
 
 
 function App() {
@@ -24,8 +27,11 @@ function App() {
           <Route path='/products' element={<ProductList />}></Route>
           <Route path='/movies' element={<MovieList />}></Route>
           <Route path='/quotes' element={<QuoteList />}></Route>
-          <Route path='/recipes' element={<RecipeListPagination2 />}></Route>
+          <Route path='/recipes' element={<RecipeListWithSearch />}></Route>
+          <Route path='/recipes-dashboard' element={<RecipesDashboard />}></Route>
           <Route path='/recipes/:id' element={<RecipeDetails />}></Route>
+          <Route path='/edit-recipe/:id' element={<EditRecipe />}></Route>
+          <Route path='/add-recipe' element={<AddRecipe />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/about' element={<About />}></Route>
         </Routes>
