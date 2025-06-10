@@ -14,6 +14,11 @@ import RecipeListWithSearch from './componenets/RecipeListWithSearch';
 import RecipesDashboard from './componenets/RecipesDashboard';
 import EditRecipe from './componenets/EditRecipe';
 import AddRecipe from './componenets/AddRecipe';
+import Counter2 from './componenets/Counter2';
+import Counter3 from './componenets/Counter3';
+import TodoListReducer from './componenets/TodoListReducer';
+import ThemeComponent from './ThemeComponent';
+
 
 
 function App() {
@@ -23,7 +28,8 @@ function App() {
       <main className='flex-grow-1'>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/counter' element={<Counter title="My Counter App" initialValue={0} />}></Route>
+          {/* <Route path='/counter' element={<Counter title="My Counter App" initialValue={0} />}></Route> */}
+          <Route path='/counter' element={<Counter3 />}></Route>
           <Route path='/products' element={<ProductList />}></Route>
           <Route path='/movies' element={<MovieList />}></Route>
           <Route path='/quotes' element={<QuoteList />}></Route>
@@ -32,6 +38,8 @@ function App() {
           <Route path='/recipes/:id' element={<RecipeDetails />}></Route>
           <Route path='/edit-recipe/:id' element={<EditRecipe />}></Route>
           <Route path='/add-recipe' element={<AddRecipe />}></Route>
+          <Route path='/todo-app' element={<TodoListReducer />}></Route>
+          <Route path='/theme-page' element={<ThemeComponent />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/about' element={<About />}></Route>
         </Routes>

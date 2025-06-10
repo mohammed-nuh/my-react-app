@@ -19,6 +19,8 @@ function Header() {
                             <Link className="nav-link brand_tc4" to='/quotes'>Quotes</Link>
                             <Link className="nav-link brand_tc4" to='/recipes'>Recipes</Link>
                             <Link className="nav-link brand_tc4" to='/recipes-dashboard'>Recipes Dashboard</Link>
+                            <Link className="nav-link brand_tc4" to='/todo-app'>Todo App</Link>
+                            <Link className="nav-link brand_tc4" to='/theme-page'>Theme Page</Link>
                             <Link className="nav-link brand_tc4" to='/contact'>Contact</Link>
                             <Link className="nav-link brand_tc4" to='/about'>About</Link>
                         </div>
